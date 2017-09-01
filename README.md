@@ -7,7 +7,7 @@ Support Swift frameworks in native Titanium modules.
 
 ### Usage
 1. Download the `ti.swiftsupport.js` file and open it
-2. Search for the `SWIFT_VERSION` variable and specify your Swift version used [[*](#note-1)].
+2. Search for the `SWIFT_VERSION` variable and specify your Swift version used [[*](#note-1)]
 3. Adjust your module project code by placing the `ti.swiftsupport.js` file in `<your-module-ios-root>/hooks`
 5. That's it!
 
