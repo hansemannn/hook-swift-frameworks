@@ -31,17 +31,7 @@ function init(logger, config, cli, appc) {
 
 						if (!buildSettings.SWIFT_VERSION) {
 							buildSettings.SWIFT_VERSION = SWIFT_VERSION;
-						}
-
-						// LD_RUNPATH_SEARCH_PATHS is a space separated string of paths
-						var searchPaths = (buildSettings.LD_RUNPATH_SEARCH_PATHS || '').replace(/^"/, '').replace(/"$/, '');
-						if (searchPaths.indexOf('$(inherited)') === -1) {
-							searchPaths += ' $(inherited)';
-						}
-						if (searchPaths.indexOf('@executable_path/Frameworks') === -1) {
-							searchPaths += ' @executable_path/Frameworks';
-						}
-						buildSettings.LD_RUNPATH_SEARCH_PATHS = '"' + searchPaths.trim() + '"';						
+						}					
 					});
 				}
 			});
